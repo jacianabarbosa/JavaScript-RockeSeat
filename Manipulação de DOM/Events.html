@@ -6,9 +6,11 @@
     </head>
     <body>
         <div id="app">
-            <button onclick="mostraAlerta()">Me pressione</button>
+            <!-- <button onclick="mostraAlerta()">Me pressione</button> -->
+            <input type="text" onkeypress="mostraAlerta()"/>
+            <button onmouseover="mostraAlerta()">Me pressione</button>
         </div>
-
+        
         <script>
            function mostraAlerta() {
                alert('Botao foi clicado');
