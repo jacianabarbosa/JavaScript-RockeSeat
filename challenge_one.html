@@ -1,0 +1,25 @@
+<!-- Challenge-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso de JavaScript</title>
+    </head>
+    <body>
+        <script>
+           function endereco(endereco){
+               //object
+                var endereco = {
+                    rua: 'Rua dos Pinheiros',
+                    num: 12345,
+                    bairro: 'Centro',
+                    cidade: 'Sao Paulo',
+                    uf: 'SP'
+                }
+                return endereco;
+           } 
+
+            var endereco = endereco(endereco);
+            console.log("O user mora em:", endereco.cidade, "/", endereco.uf, "no bairro:", endereco.bairro, "rua:", endereco.rua, "no numero:", endereco.num);
+        </script>
+    </body>
+</html>
