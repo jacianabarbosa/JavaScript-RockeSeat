@@ -1,0 +1,45 @@
+<!-- Trabalhando com a DOM-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso de JavaScript</title>
+    </head>
+    <body>
+        <div id="app">
+        
+            <!-- <input type="text" name="nome1" id="nome" class="nome"/> -->
+            <input type="text" name="nome"/>
+
+            <button class="botao">Me pressione</button>
+        </div>
+        
+        <script>
+
+            // busca o elemento pelo ID
+            // var inputElement = document.getElementById('nome');
+
+            // //busca o elemento pela tag e retorna um vetor
+            // var inputElement = document.getElementsByTagName('input')[0];
+
+            // // busca o elemento pela classe e retorna um vetor
+            // var inputElement = document.getElementsByClassName('nome')[0];
+
+            // //retorna apenas um elemento
+            var inputElement = document.querySelector('input[name=nome]');
+
+            // //retorna uma lista de elementos
+            // var inputElement = document.querySelectorAll('input');
+
+            var btnElement = document.querySelector('button.botao');
+
+            // funcao de onclick
+            btnElement.onclick = function(){
+                var text = inputElement.value;
+                alert(text);
+            }
+
+            
+           console.log(btnElement);
+        </script>
+    </body>
+</html> 
